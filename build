@@ -4,8 +4,8 @@ cd /tmp/rom # Depends on where source got synced
 rm -rf .repo & # lets remove unnecessary things, so that no storage issue can occur
 
 # Normal build steps
-. build/envsetup.sh
-lunch lineage_whyred-userdebug
+source build/envsetup.sh
+lunch p404_whyred-userdebug
 export SELINUX_IGNORE_NEVERALLOWS=true
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
@@ -30,14 +30,14 @@ up(){
 }
 
 make_metalava(){
-	mka api-stubs-docs
-	mka system-api-stubs-docs
-	mka test-api-stubs-docs
+	m api-stubs-docs
+	m system-api-stubs-docs
+	m test-api-stubs-docs
 }
 
 make_rom(){
-	tg_post_msg "<b>Crdroidandroid CI Build Triggered for whyred</b>" "$CHATID"
-	mka bacon -j16
+	tg_post_msg "<b>P-404 CI Build Triggered for whyred</b>" "$CHATID"
+	m bacon -j16
 	if [ -f out/target/product/whyred/*zip ]; then
 		zip=$(up out/target/product/whyred/*zip)
 		echo " "
