@@ -1,12 +1,11 @@
 env: # Environt variable to pass to all tasks
     CIRRUS_CLONE_DEPTH: 1 # No need to clone with whole history
     CIRRUS_WORKING_DIR: "/tmp/ci" # Where to clone repo
-    rclone_config: "ENCRYPTED[cd748227cb60043e7066e426e166988ff5b0fb70341bcb4f661b5c255f19e90f6cb144de4ffdfdd18f201b0028a59b3a]"
-    CHATID: "ENCRYPTED[f74b235c319799d352465933e4171d71162267a08744c81a8c3273a4039aeaeb210ff2e5670df6e22a7e29ed70315f57]"
-    API_BOT: "ENCRYPTED[cb5d10e8b70521505e4141579d4b4042ab702ffba57d0e50051b9c5b7d93c37aa62c914add33fdaf8138e602ddbdbde9]"
+    CHATID: "ENCRYPTED[a65afc36a0466f1cfff2a7d6c780a75b5ae694b1c9e40b1b5ed339e7f6ae2809e23e00eb91dd8ae64e937166259e3de7]"
+    API_BOT: "ENCRYPTED[3d7c5a3a1792eccb6d0d76099c1c4ccd2e1c4b8cd9c4cf4016bef4fbf88af7bc28946097a87dd9abfa171bc6abf55e20]"
 
 task:
-    name: ItsVixano
+    name: Professor
     timeout_in: 120m
     container:
       image: apon77/aosp:latest
