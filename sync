@@ -16,6 +16,6 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 
 # Sync stuffs
 git clone https://github.com/IAmSalvaMartini/device_xiaomi_vince.git --single-branch -b elle device/xiaomi/vince --depth=1
-git clone https://github.com/IAmSalvaMartini/android_vendor_xiaomi_vince.git --single-branch -b elle vendor/xiaomi/vince --depth=1
+git clone https://github.com/gamehackerever/vendor_xiaomi_vince.git --single-branch -b 11 vendor/xiaomi/vince --depth=1
 git clone https://github.com/Blacksuan19/kernel_dark_ages_vince.git --single-branch -b darky kernel/xiaomi/vince --depth=1
 
