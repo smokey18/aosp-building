@@ -6,7 +6,7 @@ env: # Environt variable to pass to all tasks
     API_BOT: "ENCRYPTED[3d7c5a3a1792eccb6d0d76099c1c4ccd2e1c4b8cd9c4cf4016bef4fbf88af7bc28946097a87dd9abfa171bc6abf55e20]"
 
 task:
-    name: Professor
+    name: Erick
     timeout_in: 240m
     container:
       image: apon77/aosp:latest
