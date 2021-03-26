@@ -15,6 +15,7 @@ git config --global user.email sayanchakraborty334@gmail.com
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all) || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
 # Sync stuffs
+find hardware/qcom-caf/msm8996/display hardware/qcom-caf/msm8996/audio hardware/qcom-caf/msm8996/media .repo/ -delete
 git clone https://github.com/Erickeagle3/new-r-dt.git -b cr7 device/xiaomi/mido --depth=1
 git clone https://github.com/Erickeagle3/proprietary_vendor_xiaomi.git -b cr7 vendor/xiaomi/mido --depth=1
 git clone https://github.com/zeelog/android_kernel_xiaomi_mido.git -b lineage-18.1 kernel/xiaomi/mido --depth=1
