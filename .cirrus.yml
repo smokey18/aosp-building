@@ -1,6 +1,7 @@
 env: # Environt variable to pass to all tasks
     CIRRUS_CLONE_DEPTH: 1 # No need to clone with whole history
     CIRRUS_WORKING_DIR: "/tmp/ci" # Where to clone repo
+    rclone_config: "ENCRYPTED[794562a3bfb2f2fb5554be0861007b68bff6e7a7cd48c4399c79f05dba713604c1e86cb782da3b20ff868d8848041bde]"
     CHATID: "ENCRYPTED[a65afc36a0466f1cfff2a7d6c780a75b5ae694b1c9e40b1b5ed339e7f6ae2809e23e00eb91dd8ae64e937166259e3de7]"
     API_BOT: "ENCRYPTED[3d7c5a3a1792eccb6d0d76099c1c4ccd2e1c4b8cd9c4cf4016bef4fbf88af7bc28946097a87dd9abfa171bc6abf55e20]"
 
