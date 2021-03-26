@@ -18,4 +18,4 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 git clone https://github.com/IAmSalvaMartini/device_xiaomi_vince.git --single-branch -b elle device/xiaomi/vince --depth=1
 git clone https://github.com/gamehackerever/vendor_xiaomi_vince.git --single-branch -b 11 vendor/xiaomi/vince --depth=1
 git clone https://github.com/Blacksuan19/kernel_dark_ages_vince.git --single-branch -b darky kernel/xiaomi/vince --depth=1
-
+git clone https://github.com/mvaisakh/gcc-arm.git --single-branch -b gcc-master prebuilts/gcc/host/linux-x86/gcc --depth=1
