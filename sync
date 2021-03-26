@@ -17,7 +17,7 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 # Sync stuffs
 find hardware/qcom-caf/msm8996/display hardware/qcom-caf/msm8996/audio hardware/qcom-caf/msm8996/media .repo/ -delete
 git clone https://github.com/Erickeagle3/new-r-dt.git -b cr7 device/xiaomi/mido --depth=1
-git clone https://github.com/Erickeagle3/proprietary_vendor_xiaomi.git -b cr7 vendor/xiaomi/mido --depth=1
+git clone https://github.com/Erickeagle3/proprietary_vendor_xiaomi.git -b cr7 vendor/xiaomi --depth=1
 git clone https://github.com/zeelog/android_kernel_xiaomi_mido.git -b lineage-18.1 kernel/xiaomi/mido --depth=1
 git clone https://github.com/android-eleven/hardware_qcom_display -b caf-msm8996-r hardware/qcom-caf/msm8996/display --depth=1
 git clone https://github.com/android-eleven/hardware_qcom_audio -b caf-msm8996-r hardware/qcom-caf/msm8996/audio --depth=1
