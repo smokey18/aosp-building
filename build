@@ -5,8 +5,7 @@ rm -rf .repo & # lets remove unnecessary things, so that no storage issue can oc
 
 # Normal build steps
 . build/envsetup.sh
-lunch evolution_vince-userdebug
-export SELINUX_IGNORE_NEVERALLOWS=true
+lunch lineage_mido-user
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
@@ -36,10 +35,10 @@ make_metalava(){
 }
 
 make_rom(){
-	tg_post_msg "<b>Evolution X CI Build Triggered for vince</b>" "$CHATID"
+	tg_post_msg "<b>CrDroid CI Build Triggered for mido</b>" "$CHATID"
 	mka bacon -j16
-	if [ -f out/target/product/vince/*zip ]; then
-		zip=$(up out/target/product/vince/*zip)
+	if [ -f out/target/product/mido/*zip ]; then
+		zip=$(up out/target/product/mido/*zip)
 		echo " "
 		echo "$zip"
 		tg_post_msg "<b>Build Completed</b>%0A%0A<b>Link : </b> <code>"$zip"</code>" "$CHATID"
